@@ -1,0 +1,61 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border-left: hidden;
+    border-right: hidden;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+label {
+    margin-top: 10px;
+}
+
+
+/* input {
+    width: 100%;
+} */
+
+
+/* .book-form {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+} */
+
+.list-heading,
+.form-header {
+    padding: 10px;
+    border: 1px solid gray;
+    border-bottom: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+}
+
+.book-list,
+.book-form {
+    padding: 10px;
+    border: 1px solid gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.form-header {
+    background-color: green;
+    color: white;
+}
+
+.form-button {
+    margin-top: 10px;
+}

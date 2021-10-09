@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="form-header">Add Book</div>
+                        <form class="book-form" onsubmit="return false">
+                            <label for="title">Title</label><br/>
+                            <input type="text" class="form-control" id="title" placeholder="Enter Title"><br/>
+                            <label for="author">Author</label><br>
+                            <input type="text" class="form-control" id="author" placeholder="Enter Author"><br/>
+                            <label for="website">website</label><br/>
+                            <input type="text" class="form-control" id="website" placeholder="Enter Website"><br/>
+                            <input type="hidden" id="book-id" value="" />
+                            <div class="form-button">
+                                <span>
+                                <button class="btn btn-danger" id="reset">Reset</button>
+                            </span>
+                                <span>
+                                <button class=" btn btn-success" id="add-book">Add Book</button>
+                            </span>
+                                <span>
+                                <button class=" btn btn-success" id="update-book">Update Book</button>
+                            </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <div class="list-heading">Book List</div>
+                        <div class="book-list">
+                            <table id="book-table">
+                                <thead>
+                                    <tr class="thead">
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Author</th>
+                                        <th>Website</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
